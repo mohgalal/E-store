@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProductDetailsFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/button_mb"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_prod_iv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="18dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="480dp"
+                android:maxHeight="280dp"
+                android:minWidth="280dp"
+                android:minHeight="380dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shampo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_details_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="White T-shirt"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/image_prod_iv"
+                app:layout_constraintStart_toStartOf="@id/image_prod_iv"
+                app:layout_constraintTop_toBottomOf="@id/image_prod_iv" />
+
+            <TextView
+                android:id="@+id/detail_details_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="White T-shirt greygd iaugs ouwuer wyrrgj ruyyr "
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/image_prod_iv"
+                app:layout_constraintStart_toStartOf="@id/image_prod_iv"
+                app:layout_constraintTop_toBottomOf="@id/title_details_tv" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="#000"
+                app:layout_constraintEnd_toEndOf="@id/detail_details_tv"
+                app:layout_constraintStart_toStartOf="@id/detail_details_tv"
+                app:layout_constraintTop_toBottomOf="@id/detail_details_tv" />
+
+            <TextView
+                android:id="@+id/price_details_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="120 EGP"
+                android:textColor="#C63AE6"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/image_prod_iv"
+                app:layout_constraintTop_toBottomOf="@id/detail_details_tv" />
+
+            <ImageButton
+                android:id="@+id/inc_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_blue_add"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                app:layout_constraintBottom_toBottomOf="@id/price_details_tv"
+                app:layout_constraintEnd_toEndOf="@id/detail_details_tv"
+                app:layout_constraintTop_toTopOf="@id/price_details_tv" />
+
+            <TextView
+                android:id="@+id/quanitiy_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:paddingStart="19dp"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toBottomOf="@id/price_details_tv"
+                app:layout_constraintEnd_toStartOf="@id/inc_ib"
+                app:layout_constraintTop_toTopOf="@id/price_details_tv" />
+
+            <ImageButton
+                android:id="@+id/dec_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_remove"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                app:layout_constraintBottom_toBottomOf="@id/price_details_tv"
+                app:layout_constraintEnd_toStartOf="@id/quanitiy_tv"
+                app:layout_constraintTop_toTopOf="@id/price_details_tv" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="#000000"
+                app:layout_constraintEnd_toEndOf="@id/detail_details_tv"
+                app:layout_constraintStart_toStartOf="@id/detail_details_tv"
+                app:layout_constraintTop_toBottomOf="@id/price_details_tv" />
+
+            <TextView
+                android:id="@+id/description_details_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:text="White T-shirt greygd iaugs ouwuer wyrrgj ruyyr "
+                android:textColor="#000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@id/detail_details_tv"
+                app:layout_constraintStart_toStartOf="@id/detail_details_tv"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_mb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="60dp"
+        android:background="#000"
+        android:padding="10dp"
+        android:text="Add to Card"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
